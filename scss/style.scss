@@ -1,0 +1,34 @@
+@import 'partials/reset';
+@import 'partials/colors';
+//@import 'partials/prefix-mixins';
+//@import 'partials/layout'; // responsive grid and media queries
+@import 'partials/typography';
+@import 'partials/navegation';
+//@import 'partials/branding';
+//@import 'partials/buttons';
+
+body
+{
+    background-image: url("img/im-space-sen-garden.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+header
+{
+    h1
+    {
+        color: $color-5;
+        margin: 50px auto;
+        text-align: center;
+    }
+    h2 {
+        color: $color-5;
+        background-color: $color-2;
+        width: 100%;
+        padding: 50px auto;
+        text-align: center;
+    }
+}
