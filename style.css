@@ -65,13 +65,14 @@ h2 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 40px;
   font-weight: 900;
   line-height: 1.2;
   margin: 0 0 0.4em;
 }
 
 h2 {
+  font-size: 27px;
   font-weight: bold;
   margin: 1em 0;
 }
@@ -84,13 +85,16 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #cf6aac;
+  color: #F2E8F2;
+  font-family: "Montserrat", serif;
 }
 p a {
   color: #D764A2;
   text-decoration: underline;
 }
 
+/**************Smoll*****************
+/************Screen smoll*******************/
 body {
   background-image: url("img/im-space-sen-garden.png");
   background-repeat: no-repeat;
@@ -99,17 +103,87 @@ body {
   background-attachment: fixed;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 header h1 {
   color: #ffffff;
   margin: 50px auto;
   text-align: center;
 }
-header h2 {
-  color: #ffffff;
+header h2::before {
+  content: "";
   background-color: #8C2D6B;
-  width: 100%;
-  padding: 50px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 200%;
+  height: auto;
+  top: -50%;
+  right: 0px;
+  z-index: -1;
+}
+header h2 {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+  width: 250px;
   text-align: center;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/**************Large*****************
+/************Screen large*******************/
+@media only screen and (min-width: 1028px) {
+  .page-wrapper {
+    width: 800px;
+    margin: 25px auto;
+  }
+
+  header {
+    display: block;
+  }
+  header h1 {
+    color: #ffffff;
+    text-align: right;
+  }
+  header h2::before {
+    content: "";
+    background-color: #8C2D6B;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 200%;
+    height: auto;
+    top: -50%;
+    right: 0px;
+    z-index: -1;
+  }
+  header h2 {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    width: 250px;
+    text-align: left;
+  }
+
+  .summary p {
+    margin: 25px auto;
+    width: 650px;
+    text-align: center;
+  }
+  .summary p + p {
+    width: 321px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

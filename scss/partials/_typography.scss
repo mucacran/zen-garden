@@ -15,13 +15,14 @@ h2 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 40px;
   font-weight: 900;
   line-height: 1.2;
   margin: 0 0 0.4em;
 }
 
 h2 {
+  font-size: 27px;
   font-weight: bold;
   //text-transform: uppercase;
   margin: 1em 0;
@@ -36,7 +37,8 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: lighten($color-2, 25%);
+  color: $color-4;
+  font-family: $primary-font;
 
   a {
     color: $color-1;
