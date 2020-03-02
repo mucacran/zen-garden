@@ -111,26 +111,30 @@ header {
 }
 header h1 {
   color: #ffffff;
-  margin: 50px auto;
+  margin: 100px auto;
   text-align: center;
+  font-size: 50px;
 }
 header h2::before {
   content: "";
   background-color: #8C2D6B;
   padding-top: 50px;
-  padding-bottom: 50px;
-  width: 200%;
+  padding-bottom: 80px;
+  width: 500%;
   height: auto;
-  top: -50%;
-  right: 0px;
+  position: absolute;
+  top: -30%;
+  right: -50%;
+  overflow: hidden;
   z-index: -1;
 }
 header h2 {
-  display: flex;
   align-items: center;
   color: #ffffff;
   position: relative;
-  width: 250px;
+  font-size: 40px;
+  width: 350px;
+  border: 1px solid red;
   text-align: center;
 }
 
@@ -163,14 +167,15 @@ header h2 {
     padding-bottom: 50px;
     width: 200%;
     height: auto;
-    top: -50%;
+    position: absolute;
+    top: 0px;
     right: 0px;
     z-index: -1;
   }
   header h2 {
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: red;
     position: relative;
     width: 250px;
     text-align: left;
