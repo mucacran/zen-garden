@@ -83,7 +83,7 @@ section > h2::before {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.125rem;
   line-height: 1.4;
   color: #F2E8F2;
   font-family: "Montserrat", serif;
@@ -149,11 +149,13 @@ header h2 {
   margin: 50px auto;
   width: 100%;
   text-align: center;
-  padding: 0 15px;
+  padding: 0 15%;
   box-sizing: border-box;
 }
 .summary p + p {
-  width: 321px;
+  width: 100%;
+  padding: 0 25%;
+  box-sizing: border-box;
 }
 
 /**************Large*****************
