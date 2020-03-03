@@ -25,10 +25,11 @@ header
     flex-direction:column;
     flex-wrap:wrap;
     align-items: center;
+    overflow: hidden;
     h1
     {
         color: $color-5;
-        margin: 100px auto;
+        margin: 70px auto;
         text-align: center;
         font-size: 50px;
     }
@@ -43,19 +44,18 @@ header
         position: absolute;
         top: -30%;
         right: -50%;
-        overflow: hidden;
+        
         z-index: -1;
+        box-sizing: border-box;
     }
     h2 {
-        //display: flex;
         align-items: center;
         color: $color-5;
         position: relative;
         font-size: 40px;
         width: 350px;
-        border: 1px solid red;
-
         text-align: center;
+        margin-top: 70px;
     }
 }
 
@@ -65,6 +65,20 @@ header
     flex-direction:column;
     flex-wrap:wrap;
     align-items: center;
+
+    p
+    {
+        margin: 50px auto;
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    p + p
+    {
+        width: 321px;
+    }
 
 }
 
