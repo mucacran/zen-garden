@@ -29,6 +29,13 @@ h2 {
 
 }
 
+h3
+{
+  font-size: 27px;
+  font-family: $primary-font;
+  font-weight: 900;
+}
+
 section > h2::before {
   /* number before each section title */
   color: darken($color-4, 15%);
