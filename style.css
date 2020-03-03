@@ -114,7 +114,7 @@ header h1 {
   color: #ffffff;
   margin: 70px auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.4375rem;
 }
 header h2::before {
   content: "";
@@ -133,8 +133,8 @@ header h2 {
   align-items: center;
   color: #ffffff;
   position: relative;
-  font-size: 40px;
-  width: 350px;
+  font-size: 1.6875rem;
+  width: 250px;
   text-align: center;
   margin-top: 70px;
 }
@@ -154,7 +154,7 @@ header h2 {
 }
 .summary p + p {
   width: 100%;
-  padding: 0 25%;
+  padding: 0 20%;
   box-sizing: border-box;
 }
 
