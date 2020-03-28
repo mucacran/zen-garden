@@ -106,7 +106,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: auto;
   height: 100%;
   background-attachment: fixed;
 }
@@ -180,6 +179,58 @@ section#zen-intro .preamble h3 {
   color: #1F1C3F;
   margin: 0px auto 15px;
   text-align: center;
+}
+
+#zen-summary > p:first-child {
+  background-color: rgba(31, 28, 63, 0.5);
+  padding: 15px 150px;
+}
+
+#zen-requirements,
+#zen-benefits,
+#zen-participation,
+#zen-explanation {
+  padding: 50px 50px;
+  background-color: rgba(31, 28, 63, 0.8);
+  margin: 50px auto;
+}
+#zen-requirements h3,
+#zen-benefits h3,
+#zen-participation h3,
+#zen-explanation h3 {
+  color: #D764A2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#zen-requirements p,
+#zen-benefits p,
+#zen-participation p,
+#zen-explanation p {
+  color: white;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+#zen-participation {
+  background-color: rgba(242, 232, 242, 0.8);
+}
+#zen-participation h3 {
+  color: #8C2D6B;
+  text-align: center;
+}
+#zen-participation p {
+  color: #1F1C3F;
+}
+#zen-participation p a {
+  color: white;
+}
+
+#zen-requirements {
+  background-color: rgba(215, 100, 162, 0.8);
+}
+#zen-requirements h3 {
+  color: white;
+  font-size: 4rem;
 }
 
 /**************Large*****************
