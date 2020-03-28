@@ -222,7 +222,7 @@ section#zen-intro .preamble h3 {
   color: #1F1C3F;
 }
 #zen-participation p a {
-  color: white;
+  color: #8C2D6B;
 }
 
 #zen-requirements {
@@ -232,17 +232,42 @@ section#zen-intro .preamble h3 {
   color: white;
   font-size: 4rem;
 }
+#zen-requirements p a {
+  color: #1F1C3F;
+}
+
+aside.sidebar {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  text-decoration: none;
+}
 
 /**************Large*****************
 /************Screen large*******************/
 @media only screen and (min-width: 1028px) {
   .page-wrapper {
-    width: 800px;
+    width: 100%;
     margin: 25px auto;
   }
 
   header {
     display: block;
+    position: relative;
   }
   header h1 {
     color: #ffffff;
@@ -252,28 +277,69 @@ section#zen-intro .preamble h3 {
   header h2::before {
     content: "";
     background-color: #8C2D6B;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 200%;
+    width: 600px;
+    border-left: 800px;
     height: auto;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
+    top: -30px;
+    left: 0px;
+    z-index: -99999;
   }
   header h2 {
     display: flex;
     align-items: center;
-    color: red;
-    position: relative;
-    width: 250px;
+    color: #ffffff;
+    width: 100%;
     text-align: left;
+    padding-left: 200px;
   }
 
   .summary p {
     margin: 25px auto;
     width: 650px;
     text-align: center;
+  }
+  #zen-participation,
+#zen-preamble {
+    padding-left: 200px !important;
+    padding-right: 50px !important;
+    width: 500px;
+    margin: 0px;
+  }
+  #zen-participation p,
+#zen-preamble p {
+    text-align: left !important;
+  }
+
+  #zen-preamble::after {
+    clear: both;
+  }
+
+  #zen-benefits,
+#zen-explanation {
+    padding-right: 200px !important;
+    padding-left: 50px !important;
+    margin-left: 600px;
+    width: 500px;
+  }
+  #zen-benefits p,
+#zen-explanation p {
+    text-align: right !important;
+  }
+
+  #zen-explanation::after {
+    clear: both;
+  }
+
+  #zen-requirements {
+    width: 800px;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  #zen-requirements h3 {
+    margin-bottom: 30px !important;
+    display: block;
+    font-size: 3rem !important;
   }
 }
 

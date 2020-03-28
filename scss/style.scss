@@ -139,7 +139,7 @@ section#zen-intro
     p{
         color: $color-3;
         a{
-            color: white;
+            color: $color-2;
         }
     }
 }
@@ -150,6 +150,35 @@ section#zen-intro
         color: white;
         font-size: 4rem;
     }
+    p{
+        a
+        {
+            color: $color-3;
+        }
+    }
+}
+
+aside.sidebar
+{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    a
+    {
+        margin: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        color: white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: $primary-font;
+        font-weight: 900;
+        text-decoration: none;
+    }
 }
 
 /**************Large*****************
@@ -159,12 +188,13 @@ section#zen-intro
     
     .page-wrapper
     {
-        width: 800px;
+        width: 100%;
         margin: 25px auto;
     }
     header
     {
         display: block;
+        position: relative;
         h1
         {
             color: $color-5;
@@ -175,23 +205,24 @@ section#zen-intro
         {
             content: '';
             background-color: $color-2;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            width: 200%;
+            width: 600px;
+            border-left: 800px;
             height: auto;
             position: absolute;
-            top: 0px;
+            top: -30px;
             
-            right: 0px;
-            z-index: -1;
+            left: 0px;
+            z-index: -99999;
         }
         h2 {
             display: flex;
             align-items: center;
-            color: red;//$color-5;
-            position: relative;
-            width: 250px;
+            color: $color-5;
+            
+            width: 100%;
             text-align: left;
+            
+            padding-left: 200px;
         }
     }
     .summary
@@ -206,6 +237,52 @@ section#zen-intro
         p + p
         {
 
+        }
+    }
+
+    #zen-participation,
+    #zen-preamble{
+        padding-left: 200px !important;
+        padding-right: 50px !important;
+        
+        width: 500px;
+        p{
+            text-align: left !important;
+        }
+        margin: 0px;
+    }
+    #zen-preamble::after
+    {
+        clear: both;
+    }
+
+    #zen-benefits,
+    #zen-explanation
+    {
+        padding-right: 200px !important;
+        padding-left: 50px !important;
+        margin-left: 600px;
+        width: 500px;
+        p{
+            text-align: right !important;
+        }
+        
+    }
+
+    #zen-explanation::after
+    {
+        clear: both;
+    }
+
+    #zen-requirements
+    {
+        width: 800px;
+        column-count: 2;
+        column-gap: 2rem;
+        h3{
+            margin-bottom: 30px !important;
+            display: block;
+            font-size: 3rem !important;
         }
     }
 }
