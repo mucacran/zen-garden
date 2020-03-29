@@ -311,10 +311,6 @@ footer a {
     text-align: left !important;
   }
 
-  #zen-preamble::after {
-    clear: both;
-  }
-
   #zen-benefits,
 #zen-explanation {
     padding-right: 200px !important;
@@ -327,10 +323,6 @@ footer a {
     text-align: right !important;
   }
 
-  #zen-explanation::after {
-    clear: both;
-  }
-
   #zen-requirements {
     width: 800px;
     column-count: 2;
@@ -340,6 +332,58 @@ footer a {
     margin-bottom: 30px !important;
     display: block;
     font-size: 3rem !important;
+  }
+
+  footer {
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+  }
+  footer a {
+    margin: 0 !important;
+    width: 130px;
+    text-align: center;
+  }
+  footer .zen-validate-html {
+    background-color: #D764A2 !important;
+  }
+  footer .zen-validate-css {
+    background-color: #8C2D6B;
+  }
+  footer .zen-license {
+    background-color: #1F1C3F;
+  }
+  footer .zen-accessibility {
+    background-color: #F2E8F2;
+    color: #1F1C3F;
+  }
+  footer .zen-github {
+    background-color: #8C2D6B;
+  }
+  footer .zen-github:before,
+footer .zen-github:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    bottom: -30px;
+    position: absolute;
+    background-color: white;
+  }
+  footer .zen-github:before {
+    left: 65px;
+  }
+
+  footer::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-right: 65px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 65px solid transparent;
+    border-bottom: 50px solid #F2E8F2;
+    z-index: 9999;
   }
 }
 

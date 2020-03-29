@@ -279,4 +279,61 @@ footer{
             font-size: 3rem !important;
         }
     }
+
+    footer{
+        position: fixed;
+        flex-direction:column;
+        left: 0;
+        top:0;
+
+        a{
+            margin: 0 !important;
+            width: 130px;
+            text-align: center;
+        }
+
+        .zen-validate-html{
+            background-color: $color-1 !important;
+        }
+        .zen-validate-css{
+            background-color: $color-2;
+        }
+        .zen-license{
+            background-color: $color-3;
+        }
+        .zen-accessibility{
+            background-color: $color-4;
+            color: $color-3;
+        }
+        .zen-github{
+            background-color: $color-2;
+        }
+        .zen-github:before,
+        .zen-github:after{
+            content: "";
+            width: 30px;
+            height: 30px;
+            left: 30px;
+            bottom: -30px;
+            position: absolute;
+            background-color: white;
+        }
+        .zen-github:before{
+            left: 65px;
+        }
+        
+    }
+
+    footer::before
+    {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-right: 65px solid transparent;
+        border-top: 50px solid transparent;
+        border-left: 65px solid transparent;
+        border-bottom: 50px solid $color-4;
+        
+        z-index: 9999;
+    }
 }
