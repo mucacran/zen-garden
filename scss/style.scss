@@ -179,6 +179,22 @@ footer{
         font-weight: 900;
         text-decoration: none;
     }
+
+   
+}
+
+@media only screen and (max-width: 1027px)
+{
+    a{
+        animation: tiembla 4s linear infinite;
+    }
+
+    @keyframes tiembla {
+        0%{ transform: scaleY(1)}
+        50%{transform: scaleY(2)}
+        50%{transform: scaleX(-1)}
+        100%{ transform: scaleY(1)}
+    }
 }
 
 /**************Large*****************
@@ -313,13 +329,33 @@ footer{
             content: "";
             width: 30px;
             height: 30px;
-            left: 30px;
+            left: 25px;
             bottom: -30px;
             position: absolute;
             background-color: white;
+
+            animation: temblar 2s linear infinite ;
+            
+        }
+
+        @keyframes temblar{
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+              }
+              to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+              }
         }
         .zen-github:before{
-            left: 65px;
+            left: 70px;
         }
         
     }
